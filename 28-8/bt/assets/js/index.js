@@ -1,17 +1,21 @@
 for (let i=0;i<= users.length;i++) {
-	document.write("user id: "+ users[i].user_id+"<br>")
-	document.write("name: "+ users[i].name+"<br>")
-	document.write("age: "+ users[i].age+"<br>")
+	document.write("Mã người dùng: "+ users[i].user_id+"<br>")
+	document.write("Tên: "+ users[i].name+"<br>")
+	document.write("Tuổi: "+ users[i].age+"<br>")
 	if (users[i].role=1){
-		document.write("role: user")
-	}else{document.write("role: admin")}
+		document.write("Vai trò: user")
+	}else{document.write("Vai trò: admin")}
 	document.write("<br>")
-	document.write("gender: "+ users[i].gender +"<br>")
-	document.write("fb: "+ users[i].fb+"<br>")
-	document.write("status: "+ users[i].status +"<br>")
-	document.write("course: "+"<br>"+
-		"primary: "+ users[i].course.primary +"<br>"+
-		"secondary: "+ users[i].course.secondary +"<br>"+
-		"high: "+ users[i].course.high +"<br>")
+	if (users.gender=1) {
+		document.write("Giới tính: nam"+"<br>")
+	}else{document.write("Giới tính: nữ"+"<br>")}
+	document.write("Fb: "+ users[i].fb+"<br>")
+	if (users.status=1) {
+		document.write("Trạng thái: active"+"<br>")
+	}else{document.write("Trạng thái: unactive"+"<br>")}
+	document.write("Khoá học: "+"<br>"+
+		"Tiểu học: "+ users[i].course.primary +"<br>"+
+		"Trung học: "+ users[i].course.secondary +"<br>"+
+		"Cao học: "+ users[i].course.high +"<br>")
 	document.write("<br>")
 }
